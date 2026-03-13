@@ -38,6 +38,7 @@
     kdePackages.dolphin
     swww
     discord
+    obs-studio
     easyeffects
     fastfetch
     nerdfetch
