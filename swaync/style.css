@@ -451,7 +451,7 @@ trough {
 /* The filled portion of the slider — accent colored, rounded, with a shadow */
 trough highlight {
     padding: 5px;
-    background: alpha(#b5ddff, 0.4);
+    background: alpha(#23899b, 0.4); /* alpha(#b5ddff, 0.4); */
     border-radius: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
     transition: all .7s ease;
@@ -461,7 +461,7 @@ trough highlight {
 /* Deepens the shadow on the slider fill when the user hovers over the slider */
 trough highlight:hover {
     padding: 5px;
-    background: alpha(#b5ddff, 0.6);
+    background: alpha(#23899b, 0.6); /* alpha(#b5ddff, 0.6); */
     border-radius: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     transition: all .7s ease;
