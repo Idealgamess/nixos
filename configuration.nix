@@ -50,6 +50,8 @@
   };
 
   services.printing.enable = true;
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -61,6 +63,7 @@
   };
 
   services.tailscale.enable = true;
+  services.blueman.enable = true;
 
   users.users.ethan = {
     isNormalUser = true;
@@ -77,6 +80,8 @@
     tailscale
     brightnessctl    
     bibata-cursors
+    bluez
+    blueman
   ]; 
   system.stateVersion = "25.11";
 }
