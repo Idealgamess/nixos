@@ -65,9 +65,9 @@
   services.tailscale.enable = true;
   services.blueman.enable = true;
 
-  users.users.ethan = {
+  users.users.ZacharyS = {
     isNormalUser = true;
-    description = "ethan";
+    description = "ZacharyS";
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
@@ -84,4 +84,6 @@
     blueman
   ]; 
   system.stateVersion = "25.11";
+hardware.firmware = [ pkgs.sof-firmware pkgs.linux-firmware ];
+hardware.enableAllFirmware = true;
 }

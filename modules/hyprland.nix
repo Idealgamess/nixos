@@ -4,8 +4,7 @@
     enable = true;
     settings = {
       monitor = [
-        "DP-3, 1920x1080@240.00, 0x0, 1"
-        "HDMI-A-1, 1920x1080@74.97Hz, -1920x-60, 1"
+        "eDP-1, 1920x1200@60.00, 0x0, 1"
       ];
 
       "$terminal" = "kitty";
