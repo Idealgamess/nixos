@@ -8,6 +8,7 @@
     ./modules/kitty.nix
     ./modules/bash.nix
     ./modules/wofi.nix
+    ./modules/git.nix
   ];
 
   xdg.configFile = {
