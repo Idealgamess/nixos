@@ -21,6 +21,23 @@
         "type": "github"
       }
     },
+    "minesddm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1765666064,
+        "narHash": "sha256-O3xcA6cxF7J3zU8sIedZhkqZ9rtIQ+Zo0wpcSh1yJjw=",
+        "owner": "Davi-S",
+        "repo": "sddm-theme-minesddm",
+        "rev": "4ae4345f12ed3daae8e865ee446150f88b3ba2e1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Davi-S",
+        "ref": "development",
+        "repo": "sddm-theme-minesddm",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1772047000,
@@ -40,6 +57,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "minesddm": "minesddm",
         "nixpkgs": "nixpkgs"
       }
     }
