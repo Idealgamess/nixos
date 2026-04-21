@@ -9,6 +9,7 @@
     ./modules/bash.nix
     ./modules/wofi.nix
     ./modules/git.nix
+    ./modules/nvim
   ];
 
   xdg.configFile = {
@@ -30,7 +31,7 @@
   services.easyeffects.enable = true;
 
   home.packages = with pkgs; [
-    neovim
+   # neovim
     cmake
     gcc
     gnumake

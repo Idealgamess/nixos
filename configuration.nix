@@ -81,6 +81,14 @@ services.pipewire.wireplumber.extraConfig = {
   programs.firefox.enable = true;
   nixpkgs.config.allowUnfree = true;
 
+  services.openssh = {
+    enable = true;
+    settings.PermitRootLogin = "yes";  # or use a non-root user
+  };
+
+  networking.firewall.allowedTCPPorts = [ 22 ];
+
+
   environment.systemPackages = with pkgs; [
     nano
     git
@@ -91,7 +99,9 @@ services.pipewire.wireplumber.extraConfig = {
     blueman
     pipewire
     pulseaudio
-    pavucontrol    
+    pavucontrol
+    xorg.xinit
+    tigervnc    
   ]; 
   system.stateVersion = "25.11";
 hardware.firmware = [ pkgs.sof-firmware pkgs.linux-firmware ];
